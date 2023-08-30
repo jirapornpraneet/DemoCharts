@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		01991E5FB537C54BF9D607D0 /* Pods_DemoCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6147A42D4C00D7971A931495 /* Pods_DemoCharts.framework */; };
+		85A647692A9F2EF600F5E410 /*  UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A647682A9F2EF600F5E410 /*  UIView+Extension.swift */; };
+		85A6476D2A9F33D500F5E410 /* PieChartViewXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A6476C2A9F33D500F5E410 /* PieChartViewXib.xib */; };
+		85A6476F2A9F33E100F5E410 /* PieChartViewXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A6476E2A9F33E100F5E410 /* PieChartViewXib.swift */; };
 		85E50D402A9F23DC005B99C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50D3F2A9F23DC005B99C3 /* AppDelegate.swift */; };
 		85E50D422A9F23DC005B99C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50D412A9F23DC005B99C3 /* SceneDelegate.swift */; };
 		85E50D442A9F23DC005B99C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50D432A9F23DC005B99C3 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		6147A42D4C00D7971A931495 /* Pods_DemoCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A647682A9F2EF600F5E410 /*  UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UIView+Extension.swift"; sourceTree = "<group>"; };
+		85A6476C2A9F33D500F5E410 /* PieChartViewXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartViewXib.xib; sourceTree = "<group>"; };
+		85A6476E2A9F33E100F5E410 /* PieChartViewXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewXib.swift; sourceTree = "<group>"; };
 		85E50D3C2A9F23DC005B99C3 /* DemoCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E50D3F2A9F23DC005B99C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85E50D412A9F23DC005B99C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +62,17 @@
 				BD830926749313FD293DE4D1 /* Pods-DemoCharts.debug.xcconfig */,
 				E7AA6BEB03C3435B9E85947B /* Pods-DemoCharts.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		85A647632A9F2C5B00F5E410 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				85A6476C2A9F33D500F5E410 /* PieChartViewXib.xib */,
+				85A6476E2A9F33E100F5E410 /* PieChartViewXib.swift */,
+			);
+			path = PieChart;
+			sourceTree = SOURCE_ROOT;
 		};
 		85E50D332A9F23DC005B99C3 = {
 			isa = PBXGroup;
@@ -81,6 +95,7 @@
 		85E50D3E2A9F23DC005B99C3 /* DemoCharts */ = {
 			isa = PBXGroup;
 			children = (
+				85A647632A9F2C5B00F5E410 /* PieChart */,
 				85E50D3F2A9F23DC005B99C3 /* AppDelegate.swift */,
 				85E50D412A9F23DC005B99C3 /* SceneDelegate.swift */,
 				85E50D432A9F23DC005B99C3 /* ViewController.swift */,
@@ -88,6 +103,7 @@
 				85E50D482A9F23DE005B99C3 /* Assets.xcassets */,
 				85E50D4A2A9F23DE005B99C3 /* LaunchScreen.storyboard */,
 				85E50D4D2A9F23DE005B99C3 /* Info.plist */,
+				85A647682A9F2EF600F5E410 /*  UIView+Extension.swift */,
 			);
 			path = DemoCharts;
 			sourceTree = "<group>";
@@ -154,6 +170,7 @@
 			files = (
 				85E50D4C2A9F23DE005B99C3 /* LaunchScreen.storyboard in Resources */,
 				85E50D492A9F23DE005B99C3 /* Assets.xcassets in Resources */,
+				85A6476D2A9F33D500F5E410 /* PieChartViewXib.xib in Resources */,
 				85E50D472A9F23DC005B99C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A6476F2A9F33E100F5E410 /* PieChartViewXib.swift in Sources */,
+				85A647692A9F2EF600F5E410 /*  UIView+Extension.swift in Sources */,
 				85E50D442A9F23DC005B99C3 /* ViewController.swift in Sources */,
 				85E50D402A9F23DC005B99C3 /* AppDelegate.swift in Sources */,
 				85E50D422A9F23DC005B99C3 /* SceneDelegate.swift in Sources */,
