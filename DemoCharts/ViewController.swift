@@ -9,18 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var contentView: UIView!
-//    internal weak var chartView: PieChartViewXib?
-    internal weak var chartView: LineChartViewXib?
+    @IBOutlet var contentPieChartView: UIView!
+    @IBOutlet var contentLineChartView: UIView!
+    internal weak var pieChartView: PieChartViewXib?
+    internal weak var lineChartView: LineChartViewXib?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        setupPieChartView()
+        setupLineChartView()
     }
 
-    func setupView() {
-        guard chartView == nil else { return }
-        self.chartView = contentView.addViewFromNib()
+    func setupPieChartView() {
+        guard pieChartView == nil else { return }
+        self.pieChartView = contentPieChartView.addViewFromNib()
+    }
+
+    func setupLineChartView() {
+        guard lineChartView == nil else { return }
+        self.lineChartView = contentLineChartView.addViewFromNib()
     }
 
 }
