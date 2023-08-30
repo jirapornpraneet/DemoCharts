@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygO-zO-Sia">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygO-zO-Sia" customClass="PieChartView" customModule="DGCharts">
                     <rect key="frame" x="0.0" y="134" width="320" height="300"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
                     <constraints>
@@ -30,7 +30,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ygO-zO-Sia" secondAttribute="trailing" id="O8Q-fi-1To"/>
             </constraints>
             <connections>
-                <outlet property="chartView" destination="ygO-zO-Sia" id="y3y-db-S2i"/>
+                <outlet property="chartView" destination="ygO-zO-Sia" id="RcG-9m-CeK"/>
             </connections>
             <point key="canvasLocation" x="-1" y="-12"/>
         </view>
