@@ -11,6 +11,9 @@
 		85A647692A9F2EF600F5E410 /*  UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A647682A9F2EF600F5E410 /*  UIView+Extension.swift */; };
 		85A6476D2A9F33D500F5E410 /* PieChartViewXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A6476C2A9F33D500F5E410 /* PieChartViewXib.xib */; };
 		85A6476F2A9F33E100F5E410 /* PieChartViewXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A6476E2A9F33E100F5E410 /* PieChartViewXib.swift */; };
+		85A647722A9F453100F5E410 /* LineChartViewXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A647712A9F453100F5E410 /* LineChartViewXib.xib */; };
+		85A647742A9F453D00F5E410 /* LineChartViewXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A647732A9F453D00F5E410 /* LineChartViewXib.swift */; };
+		85A647762A9F46DE00F5E410 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A647752A9F46DE00F5E410 /* BalloonMarker.swift */; };
 		85E50D402A9F23DC005B99C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50D3F2A9F23DC005B99C3 /* AppDelegate.swift */; };
 		85E50D422A9F23DC005B99C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50D412A9F23DC005B99C3 /* SceneDelegate.swift */; };
 		85E50D442A9F23DC005B99C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50D432A9F23DC005B99C3 /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 		85A647682A9F2EF600F5E410 /*  UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UIView+Extension.swift"; sourceTree = "<group>"; };
 		85A6476C2A9F33D500F5E410 /* PieChartViewXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartViewXib.xib; sourceTree = "<group>"; };
 		85A6476E2A9F33E100F5E410 /* PieChartViewXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewXib.swift; sourceTree = "<group>"; };
+		85A647712A9F453100F5E410 /* LineChartViewXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineChartViewXib.xib; sourceTree = "<group>"; };
+		85A647732A9F453D00F5E410 /* LineChartViewXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewXib.swift; sourceTree = "<group>"; };
+		85A647752A9F46DE00F5E410 /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
 		85E50D3C2A9F23DC005B99C3 /* DemoCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E50D3F2A9F23DC005B99C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85E50D412A9F23DC005B99C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +80,16 @@
 			path = PieChart;
 			sourceTree = SOURCE_ROOT;
 		};
+		85A647702A9F452100F5E410 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				85A647712A9F453100F5E410 /* LineChartViewXib.xib */,
+				85A647732A9F453D00F5E410 /* LineChartViewXib.swift */,
+				85A647752A9F46DE00F5E410 /* BalloonMarker.swift */,
+			);
+			path = LineChart;
+			sourceTree = SOURCE_ROOT;
+		};
 		85E50D332A9F23DC005B99C3 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +111,7 @@
 		85E50D3E2A9F23DC005B99C3 /* DemoCharts */ = {
 			isa = PBXGroup;
 			children = (
+				85A647702A9F452100F5E410 /* LineChart */,
 				85A647632A9F2C5B00F5E410 /* PieChart */,
 				85E50D3F2A9F23DC005B99C3 /* AppDelegate.swift */,
 				85E50D412A9F23DC005B99C3 /* SceneDelegate.swift */,
@@ -171,6 +188,7 @@
 				85E50D4C2A9F23DE005B99C3 /* LaunchScreen.storyboard in Resources */,
 				85E50D492A9F23DE005B99C3 /* Assets.xcassets in Resources */,
 				85A6476D2A9F33D500F5E410 /* PieChartViewXib.xib in Resources */,
+				85A647722A9F453100F5E410 /* LineChartViewXib.xib in Resources */,
 				85E50D472A9F23DC005B99C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,10 +243,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				85A6476F2A9F33E100F5E410 /* PieChartViewXib.swift in Sources */,
+				85A647742A9F453D00F5E410 /* LineChartViewXib.swift in Sources */,
 				85A647692A9F2EF600F5E410 /*  UIView+Extension.swift in Sources */,
 				85E50D442A9F23DC005B99C3 /* ViewController.swift in Sources */,
 				85E50D402A9F23DC005B99C3 /* AppDelegate.swift in Sources */,
 				85E50D422A9F23DC005B99C3 /* SceneDelegate.swift in Sources */,
+				85A647762A9F46DE00F5E410 /* BalloonMarker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
